@@ -11,9 +11,10 @@ f = open(filePath, "r")
 #print(lines)
 
 for line in f:
-    print(line,end="")
+    print(line,end='')
     
 f.close()
+print("over")
 
 import sys
 
@@ -35,5 +36,10 @@ try:
 
 except OSError as err:
     print("OS error:{0}".format(err))
+    
+#....
+with open(filePath) as f:
+    for line in f:
+        print(line,end="")
     
 

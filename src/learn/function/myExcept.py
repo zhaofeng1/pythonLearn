@@ -9,6 +9,6 @@ try:
     raise MyError(2*2)
 except MyError as err:
     print('My exception occurred, value:', err.value)
+finally:
+    print("over")
     
-    
-raise MyError("test")
