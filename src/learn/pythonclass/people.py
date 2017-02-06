@@ -22,5 +22,6 @@ class people:
         
 #实例化
 p = people('tom',10,100)
+print(p.age)
 p.speak()
 
