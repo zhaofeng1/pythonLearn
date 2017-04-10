@@ -1,3 +1,4 @@
+# coding=utf-8
 '''
 Created on 2017年1月3日
 
@@ -11,7 +12,7 @@ f = open(filePath, "r")
 #print(lines)
 
 for line in f:
-    print(line,end='')
+    print line
     
 f.close()
 print("over")
@@ -40,6 +41,6 @@ except OSError as err:
 #....
 with open(filePath) as f:
     for line in f:
-        print(line,end="")
+        print line
     
 

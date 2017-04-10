@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/decipher/Public_Params.py=utf-8
+encoding//src/decipher/da/DA_allProcess.py=utf-8
+encoding//src/decipher/da/pub_conf.py=utf-8
+encoding//src/learn/grammar/__init__.py=utf-8
+encoding//src/learn/grammar/fileTest.py=utf-8
+encoding//src/learn/grammar/listTest.py=utf-8
+encoding//src/learn/mdsp/util/Config.py=utf-8
+encoding//src/learn/mdsp/util/Dsp_Status.py=utf-8
+encoding//src/learn/mdsp/util/MysqlUtil.py=utf-8
+encoding//src/learn/mdsp/util/WebChatUtils.py=utf-8
+encoding//src/learn/mdsp/util/mysql_test.py=utf-8

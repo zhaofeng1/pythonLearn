@@ -1,3 +1,4 @@
+# coding=utf-8 
 '''
 Created on 2016年12月30日
 
@@ -5,7 +6,8 @@ Created on 2016年12月30日
 '''
 # List
 import sys
-list1 = ["a","b","c"]
+# list1 = ["a","b","c"]
+list1 = []
 list1.append("f")
 print(list1)
 for str in list1:

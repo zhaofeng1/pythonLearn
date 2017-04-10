@@ -1,4 +1,4 @@
-from builtins import dict
+# coding=utf-8
 str1 = 'Hello World!'
  
 print(str1)          # 输出完整字符串
@@ -9,4 +9,3 @@ print(str1 * 2)      # 输出字符串两次
 print(str1 + "TEST") # 输出连接的字符串
 
 
-dict

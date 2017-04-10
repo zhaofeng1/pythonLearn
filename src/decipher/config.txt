@@ -1,0 +1,412 @@
+[api_host]
+API_HOSTS=10.200.10.220
+API_HOSTS_DA=dc.altamob.com
+replace_url=10.200.10.220
+#API_HOSTS=api.altamob.com
+#replace_url=pixel.admobclick.com
+WEBEYE_HOST=aof.webeyemob.com
+
+[apus_widget]
+API_PATH=/adserver/v1/s2s/customized/apuswidget/adfetch
+
+[apus_single]
+API_PATH=/adserver/v1/rtc/customized/apus/single/adfetch
+
+[apus_wall]
+API_PATH=/adserver/v1/s2s/customized/apusappwall/adfetch
+
+
+[rtc]
+API_PATH=/adserver/v1/rtc/customized/adfetch
+#30057
+token=0b76900a-9280-942a-4719-04bd77c3d921
+
+#30058
+# token=b7fb0d79-0748-407c-69bb-1413e238f136
+#30059
+# token=0f4bef68-5acd-a6c7-f0aa-7ac179fedeac
+
+[sdk]
+API_PATH=/adserver/v1/promote/ads/sdk
+#30032
+token=10ca01fc-cfc4-e627-bdcc-a1ad4cbde51d
+
+[lbe]
+API_PATH=/adserver/v1/s2s/customized/lbe/adfetch
+#10400
+token=809b750e-fd36-4e5a-8f1c-9a5c798417e3
+
+[vm]
+API_PATH=/adserver/v1/vm/v1/adfetch
+#30069
+token=f89022dc-8614-02c2-d745-5b896b338fd4
+
+
+[cm]
+header={"token":"9dc09dac-a47d-4ca5-a91e-344868724b36"}
+s2s=/adfetch/v1/s2s/campaign/get
+
+[appcloud]
+API_PATH=/adserver/v1/appcloud/appwall/fetch
+#30070
+token=cca6a3bf-7f63-e4e3-69ab-d2554cf6d7a4
+
+[uc]
+API_PATH=/adserver/v1/rtc/customized/uc/adfetch
+#30080
+#token=e8ec38be-04b9-b77f-23e8-9a1e7b185b5d
+token=e8ec38be-04b9-b77f-23e8-9a1e7b185b5d
+
+[app_cloud_point]
+API_PATH=/adserver/v1/appcloud/appoint/fetch
+token=cca6a3bf-7f63-e4e3-69ab-d2554cf6d7a4
+header={"token":"cca6a3bf-7f63-e4e3-69ab-d2554cf6d7a4","X-Forwarded-For":"8.8.8.8" }
+
+[app_cloud_wall]
+API_PATH=/adserver/v1/appcloud/appwall/fetch
+token=cca6a3bf-7f63-e4e3-69ab-d2554cf6d7a4
+header={"token":"cca6a3bf-7f63-e4e3-69ab-d2554cf6d7a4","X-Forwarded-For":"8.8.8.8" }
+group=[{"group_1_en_name":"GAMEab","group_1_en_desc":"Best Game In China","group_1_en_iconurl":"https://lh3.googleusercontent.com/1DgHNL48SN1x5Y6E0jMnGIbnLhYpnCTXIKL_qMzzClwPwq7Vsyc_ZIykj9n4PNW5HQ:w300"},{"group_1_id_name":"GAME_IN","group_1_id_desc":"Best Game In China IN","group_1_id_iconurl":"https://lh3.googleusercontent.com/1DgHNL48SN1x5Y6E0jMnGIbnLhYpnCTXIKL_qMzzClwPwq7Vsyc_ZIykj9n4PNW5HQ:w300"},{"group_1_ch_name":"游戏","group_1_ch_desc":"中国地区的游戏","group_1_ch_iconurl":"https://lh3.googleusercontent.com/1DgHNL48SN1x5Y6E0jMnGIbnLhYpnCTXIKL_qMzzClwPwq7Vsyc_ZIykj9n4PNW5HQ:w300"},{"group_2_en_name":"游戏","group_2_en_desc":"เกมส์ใหม่มาแรงแห่งยุค ต้อนรับ ปี 2015 การต่อสู้ที่คุณไม่เคยสัมผัส ห้ามพลาด！","group_2_en_iconurl":"https://lh3.googleusercontent.com/2DgHNL48SN2x5Y6E0jMnGIbnLhYpnCTXIKL_qMzzClwPwq7Vsyc_ZIykj9n4PNW5HQ:w300"}]
+
+
+[app_cloud_c2s]
+API_PATH=/adserver/v1/c2s/appoint/fetch
+token=cca6a3bf-7f63-e4e3-69ab-d2554cf6d7a4
+
+
+#SDK3.0
+[ads]
+API_PATH=/adserver/v1/promote/ads/sdk/v3
+token=488f6173-f1b1-ebd3-029a-cff8a4b0eed4
+placementid=1662684189370000_1769833153868186
+X-Forwarded-For=8.8.8.8
+
+[sdk_imp]
+API_PATH=/v1/sdk/imp
+
+[sdk_appcollect]
+API_PATH=/adserver/v1/sdk/appcollect
+
+[sdk_install]
+API_PATH=/adserver/v1/sdk/installreport
+
+[sdk_noreffer]
+API_PATH=/adserver/v1/sdk/norefferclick
+
+[sdk_click_report]
+API_PATH=/v1/data/upload/sdk/v3/click
+es_url=10.200.10.222:9200/_search
+#es_url=search-adserver01-iaozmqorjy46uy4cuai5h4pyle.ap-southeast-1.es.amazonaws.com/_search
+
+#sdk4.0
+[ads4]
+API_PATH=/adserver/v1/promote/ads/sdk/v4
+#30059
+token=0f4bef68-5acd-a6c7-f0aa-7ac179fedeac
+placementid=1662684189370000_1769833153868186
+
+[sdk4_install]
+API_PATH=/adserver/v1/sdk/installreport/get
+placement_id=1662684189370000_1769833153868210
+
+[sdk4_imp]
+API_PATH=/v1/sdk4/upload/imp
+
+[sdk4_clk]
+API_PATH=/v1/sdk4/upload/clk
+
+[sdk4_appcollection]
+API_PATH=/adserver/v1/sdk/appcollect
+[sdk_ios]
+API_PATH=/adserver/v1/promote/ads/ios/sdk
+API_PATH2=/adserver/v1/promote/ads/ios/url/get
+placement_id=1662684189370000_1769833153868210
+token=5109abe1-db7a-a455-b80b-0e1829ba96c0
+
+[s2s]
+#gzip
+host_gz=/adfetch/v1/s2s/campaign/get
+host_gz_incent=/adfetch/v1/s2s/campaign/incent/get
+host_gz_subscribe=/adfetch/v1/s2s/campaign/subscribe/get
+host_gz_ios=/adfetch/v1/s2s/campaign?platform=ios
+host_gz_geo=/adfetch/v1/s2s/campaign/fetch?geo=%s
+
+
+#json
+host_json=/adfetch/v1/s2s/campaign/fetch
+host_json_incent=/adfetch/v1/s2s/campaign/incent/fetch
+host_json_subscribe=/adfetch/v1/s2s/campaign/subscribe/get
+host_json_iso=/adfetch/v1/s2s/campaign?platform=ios
+host_json_geo=/adfetch/v1/s2s/campaign/fetch?geo=%s
+
+[s2s_json_new]
+API_PATH=/adfetch/v1/offer/offline
+
+[decipher_taskDataSend]
+API_PATH=/dc/v1/ts
+#API_PATH=/decipher/taskDataSend
+
+[decipher_click_upload]
+API_PATH=/dc/v1/cp
+
+[decipher_install_upload]
+API_PATH=/dc/v1/ip
+
+[decipher_retain_upload]
+API_PATH=/dc/v1/sp
+
+[intercept]
+API_PATH=/adserver/v1/flow/intercept/sdk
+API_PATH_V2=/adserver/v1/flow/intercept/sdk/v2
+API_PATH_V3=/adserver/v1/flow/intercept/sdk/v3
+token=f96de517-c92e-7100-da5b-64c18b4c5116
+
+
+[redis]
+host=10.200.10.221
+port=6379
+
+[ios]
+API_PATH=/adserver/v1/promote/ads/ios/sdk
+
+[log_server]
+host = 10.200.10.224
+password = monkey@123
+log_local_dir = ./log/
+log_remote_dir = /export/fhf/logs/
+
+[click_url]
+click_ua=Mozilla/5.0 (Linux; Android 4.4.4; HM NOTE 1LTE Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.109 Mobile Safari/537.36
+clk=10.200.10.220
+clk_pixel=pixel.admobclick.com
+clk_webeye=pixel.webeye.com
+clk_s2s=pixel.admobclick.com
+secretKey=YTQ4ZjQyNmY3ZmViMTk4NGFmOTIwZTgxNTAwNGM5MDI=
+
+[UrlValidator]
+US=http://52.8.129.238:50002/UrlValidatorServer/
+ID=http://103.30.246.43:50002/UrlValidatorServer/
+TH=http://119.59.123.30:50002/UrlValidatorServer/
+IN=http://52.66.4.48:50002/UrlValidatorServer/
+CA=http://158.69.4.47:50002/UrlValidatorServer/
+GB=http://104.238.170.78:50002/UrlValidatorServer/
+BR=http://52.67.30.221:50002/UrlValidatorServer/
+MX=http://169.57.121.109:50002/UrlValidatorServer/
+ES=http://5.134.116.218:50002/UrlValidatorServer/
+VN=http://125.212.224.20:50002/UrlValidatorServer/
+PH=http://103.19.16.167:50002/UrlValidatorServer/
+MY=http://223.25.245.11:50002/UrlValidatorServer/
+KR=http://52.78.27.164:50002/UrlValidatorServer/
+JP=http://52.197.12.162:50002/UrlValidatorServer/
+DE=http://52.58.212.132:50002/UrlValidatorServer/
+RU=http://95.163.121.235:50002/UrlValidatorServer/
+IT=http://188.164.128.127:50002/UrlValidatorServer/
+TR=http://176.53.22.202:50002/UrlValidatorServer/
+PL=http://176.122.224.110:50002/UrlValidatorServer/
+FR=http://151.80.183.170:50002/UrlValidatorServer/
+
+
+[ip]
+US=8.8.8.8
+ID=120.191.255.255
+TH=119.59.123.30
+IN=103.12.211.226
+BR=201.75.0.0
+MX=201.116.187.236
+VN=42.112.38.132
+PH=103.19.16.167
+MY=218.111.16.0
+RU=95.163.121.235
+
+[geo]
+US=US
+ID=ID
+TH=TH
+IN=IN
+BR=BR
+MX=MX
+VN=VN
+PH=PH
+MY=MY
+RU=RU
+
+[db]
+db_host_hasoffer=10.200.10.146
+db_host_report=10.200.10.146
+db_user_name=adservermm
+db_passwd=mmadserver
+db_name1=hasoffer_0805
+db_port1=3306
+db_name2=adserver_report_2016_02_01
+db_port2=3306
+
+[db_online]
+db_host_hasoffer = sg-adserver-hasoffer.cdvvzzu6xuar.ap-southeast-1.rds.amazonaws.com
+db_host_report = sgpadservernew-slave-01.cdvvzzu6xuar.ap-southeast-1.rds.amazonaws.com
+db_user_name = adservermm
+db_passwd  =mmadserver
+db_name1 = hasoffer_0720
+db_port1 = 33060
+db_name2 =adserver_report_0605
+db_port2 = 33060
+
+[db_decipher]
+db_host = 10.200.10.146
+db_user_name = decipher
+db_passwd  = decipherpwd
+db_name1 = decipher_server
+db_port1 = 3306
+
+[db_decipher_line]
+db_host=sg-adserver-hasoffer.cdvvzzu6xuar.ap-southeast-1.rds.amazonaws.com
+db_user_name = decipher_select
+db_passwd  = decipher_select_QMBpzqwK
+db_name1 = decipher_server
+db_port1 = 3306
+
+
+[category]
+subsite_30057_category1=game_puzzle
+subsite_30057_category2=books_and_reference
+subsite_30057_category3=shopping
+
+subsite_30086_category1=game_puzzle
+subsite_30086_category2=shopping
+
+subsite_30080_category1=game_puzzle
+subsite_30080_category2=shopping
+
+subsite_30032_category1=game_puzzle
+subsite_30032_category2=shopping
+
+subsite_10400_category1=game_puzzle
+subsite_10400_category2=shopping
+
+subsite_30069_category1=game_puzzle
+subsite_30069_category2=shopping
+
+[content_rating]
+content_rating_30086_1=-1
+content_rating_30086_2=12
+not_content_rating_30086_1=12
+#not_content_rating_30086_2=7
+
+
+content_rating_30032_1=18
+content_rating_30032_2=12
+not_contect_rating_30032_1=18
+not_content_rating_30032_2=7
+
+content_rating_30057_1=18
+content_rating_30057_2=12
+not_content_rating_30057_1=18
+not_content_rating_30057_2=7
+
+[payout_type]
+payout_30086_1=cpi
+payout_30057_1=cpi
+
+[platform]
+android=android
+ios=ios
+
+[token]
+10500 = ada925e2-0c8d-4a57-b546-34fd97daeef7
+10600 = 9dc09dac-a47d-4ca5-a91e-344868724b36
+10801 = 10b156a8-14a2-4a74-b933-f49015d37559
+10802 = 98972636-986d-4654-ac40-4e2265a1d1c6
+10803 = 771b3233-dd00-4211-b852-41afa8ffea88
+10804 = d7b85679-9998-4a85-afa8-ba3a9d90abd5
+30016 = f1042934-d797-9fd8-c933-4775b248b951
+30017 = 1aced50a-108c-a255-bfc4-a6d0f0b82bc4
+30024 = 823b88a9-7627-388f-648b-a7b7349511d7
+30025 = e6b6eba2-8958-fb6b-d8ca-80cbea9d62b1
+30026 = e6e82ea2-14df-80d3-8e3f-4da7a6ac5696
+30027 = 7f56d2b9-48e8-b416-7c6d-de892f71743e
+30031 = 9cdaa10e-10dd-4b00-0668-65e42f752edc
+30038 = c43ac464-6f86-0437-cb3c-fd723fea43b0
+30039 = be59c0c7-c491-c38a-844a-6f1bf1e1f971
+30035 = 6aa36139-dcbd-b699-4121-fb68de042f06
+30036 = e9910eb7-12b2-85d3-c970-0a8274804c5a
+30040 = 189ea384-df4d-3501-7424-c4f991f74398
+30041 = d89f2517-6ec3-84a5-a671-03a4b3091d83
+30044 = b8e73c11-a7c4-d652-c1e4-ac477c2a9067
+30045 = 4bd92e48-64f9-2fc8-30ea-bf8b52427145
+30050 = 0ab1e062-b373-9b28-2ecc-cbaf508c2090
+30051 = a97e149b-90e0-91bb-09ab-b5e46cef3e50
+30054 = 5fc122c2-c1a3-386e-552c-7aefb467894f
+30061 = 3adf1380-0ed1-ce0f-55bf-70d7046bf2b9
+30062 = 0b9fa073-fc1c-4ca7-d45d-95e52c2b7a46
+30063 = b52e05c9-1919-6aad-afc7-d359e6051205
+30064 = 6c0284bb-1f37-142a-6c9a-6e66ae375128
+30066 = 9fc665ce-a0ea-3c42-95cb-f8d79352a46b
+30071 = d795fff1-7262-09e4-6acb-61507b881e09
+30072 = c9877ff6-ad97-bf2f-ef7b-fd5e66c87258
+30073 = 06262347-1727-210a-d99f-9d58dd5df1db
+30076 = d7ae1e78-3560-7538-0fd4-26ebaf540fc9
+30077 = 0d32e450-1e01-c408-0453-0610f143424d
+30078 = 20b6c797-bce1-0ba1-af81-ed0b4b48c426
+30079 = 50aaf2db-3090-ecb6-9667-2342bee7d396
+30081 = 488f6173-f1b1-ebd3-029a-cff8a4b0eed4
+30085 = e6c967a5-1473-8dbe-68a4-329d4c5628be
+30087 = af64630f-a99a-b9e2-2ffb-84091de0500b
+30088 = 6a16bfee-9e10-d543-6c05-f1107ce3fa77
+30089 = c292341d-1b28-bfdc-6adb-450091a3ded0
+30093 = 0ca65fb0-4f39-7c64-6f70-4a9eb86f6552
+30097 = 4f3ac866-5cda-4c8e-fd60-07b169439444
+30100 = 6c665718-3add-4616-6cd7-2d17103d2135
+30101 = dd90b87f-222f-15ad-f5f6-7397f7a2d3aa
+30105 = 61ea12bc-6356-825c-d6b8-e837aecfc2bf
+30021 = 031541ee-fce3-6148-1735-71e5dd8ba04f
+30037 = 0821be9f-e19d-8fa4-255b-4d54e26f3ebb
+30033 = 6d5c6ccf-5092-6dca-9e13-50ed30da85f4
+30052 = f3b709ef-46a2-3878-cafc-e95d1fd8eba9
+30068 = f64f4810-73b6-057e-bfcf-32fc9dcba70d
+30056 = 481b563e-2557-8ce3-e211-dfe0062fd753
+30028 = fc216e49-96b2-6bbf-6b05-69cf262009cc
+30030 = f2f7f148-6b3e-b31c-cc6c-31ec0a8eddc8
+30046 = 0144b602-b386-d2a9-52dd-230d6237ae4b
+30047 = 3bb6540f-b02a-7cda-3547-6f76235c4a64
+30043 = d64fc6e7-0367-fa7c-eb25-f050279e4335
+30042 = c20210e4-db3d-7af5-7d97-746afbdd42c5
+30048 = 0ecf1b4e-e5a3-845a-91c9-4f9d9a397417
+30053 = ca4c3631-37ff-4673-e561-728c1ff94d85
+30065 = 43e190b9-08c9-c20b-88a4-bbee57bcc35e
+30092 = a0497da0-9a21-a3ef-d651-178a642d39d1
+30075 = 9118778a-5451-182e-5bf3-9c8e3a21978c
+30094 = dcd096a4-8c67-c9c9-d816-5f02f74af878
+30110 = 6ba87f06-32bb-aa3c-b1c9-20ad68af4528
+30112 = 15eba052-1ff3-76de-a6ae-e6690753f149
+30113 = 3b183c45-c3ab-9cc8-8b06-324bbf90c674
+30116 = be4f7581-dab5-8012-b37e-191d22c5e793
+30117 = d319c852-2fef-83ef-93ed-7275046f4e66
+30118 = 5101be49-787f-044f-86a3-518e2cc310d1
+30119 = 381bc194-3ed3-de4d-ee57-d62b6cd3c88c
+30121 = 923d092a-e422-cf83-1546-b0d6a35f0676
+30124 = 2744d265-ddd6-ea54-149c-3952e19ddf3d
+30125 = 4e958623-c490-9583-be4e-bba7677bb821
+30126 = 6a79f972-3a1a-ad6d-c7bb-d0d35b27d3f2
+30127 = c8760940-49a8-198e-1548-faaf16076db8
+30128 = bcf9cbe1-439c-3fca-bb3f-9b7f5f3e2481
+30130 = 0d1626a4-239d-0229-35c1-5a9c891b1ab0
+30131 = 12d59f7d-1142-44fe-83bb-dfb662cade53
+30132 = 0fadcd71-3d96-7302-2aa0-72722f1a2169
+30137 = 638debbb-3303-0226-8531-dae3c9412680
+30138 = a04ecca9-a4ec-eee2-c0ed-bca1ea913950
+30139 = 0bb782fe-7d46-8309-fa07-a4abac4adb88
+30140 = 0e788bb7-6972-ddb9-4c39-0726ffb43231
+30141 = 10660ad4-5c1b-07b9-499b-61fddc6a1a34
+30142 = 5b8a8f5f-b17c-6c1d-52da-ee1655bd2f59
+30145 = 4ce9a7a1-e1d6-ef7e-3b1e-5ee8d9040ea1
+30146 = 98f7ee59-15bb-4fe7-0360-b8f0a0cd4afb
+30108 = 5109abe1-db7a-a455-b80b-0e1829ba96c0
+30059 = 0f4bef68-5acd-a6c7-f0aa-7ac179fedeac
+30168 = 68458a92-470a-021f-e365-2d839ad7b14b
+
+
+[pid]
+30053=1662684189370000_1769833153868147
+
+[plat]
+ios=ios
+android=android
