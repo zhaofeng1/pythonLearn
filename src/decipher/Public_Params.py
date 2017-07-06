@@ -2,12 +2,13 @@
 import pymysql.cursors
 import urlparse,os
 import ConfigParser
+from random import Random
 
 #读取配置文件
 local_path = os.path.join(os.path.dirname(__file__))
 conf = ConfigParser.ConfigParser()
 conf.read(os.path.join(local_path, "./config.txt"))
-
+lista=[1,2,3]
 
 # url请求路径主域名
 API_HOSTS=conf.get('api_host','API_HOSTS')
@@ -99,6 +100,39 @@ def location_dict_arg(url):
     url = dict([(k, v[0]) for k, v in urlparse.parse_qs(query).items()])
     return url
 
+def urlDecode(url):
+    if '\\a' in url:
+        url = url.replace('\\a', '=')
+        url = url.replace('\\b', '&')
+    if '\a' in url:
+        url = url.replace('\a', '=')
+        url = url.replace('\b', '&')
+    if "%253D" in url:
+        url=url.replace("%253D","=")
+    if "%2526" in url:
+        url=url.replace("%2526","&")
+    if "%3D" in url:
+        url = url.replace('%3D', '=')
+    if "%26" in url:
+        url = url.replace("%26", "&")
+    if "%5Cb"  in url:
+        url=url.replace("%5Cb","&")
+    if "%5Ca" in url:
+        url=url.replace("%5Ca","=")
+    if  "%7B"in url:
+        url=url.replace("%7B","{")
+        url=url.replace("%7D","}")
+    if "%25" in url:
+        url=url.replace("%25","%")
+    if "%3a" in url:
+        url=url.replace("%3a",":")
+    if "%2f" in url:
+        url=url.replace("%2f","/")
+    if "%7B" in url:
+        url=url.replace("%7B","{")
+    if "%22" in url:
+        pass
+
 
 #数据库连接
 def sql_conn():
@@ -128,6 +162,7 @@ def sql_conn():
                                   charset='utf8',
                                   cursorclass=pymysql.cursors.DictCursor)
     return connection1, connection2
+
 
 #code&lang
 def geo_langs():
@@ -216,12 +251,16 @@ def sql_hasoffer():
                 LEFT JOIN feed_offer_description d ON d.app_info_id=o.app_info_id
                 LEFT JOIN feed_app_info i ON i.id=o.app_info_id
                 LEFT JOIN subsite_source_config ssc on ssc.source=o.source
-                left join ok_source_config osc on osc.source_code = ssc.source
+                LEFT JOIN ok_source_config osc on osc.source_code = ssc.source
+                LEFT JOIN subsite_config sub on sub.subsite_code=ssc.subsite
                 WHERE 1=1
                 AND t.status = 'active'
                 AND o.status IN ('published','active')
                 AND i.status = 'published'
-                and osc.`status`='published'
+                AND osc.status='published'
+                AND sub.status='published'
+                AND ssc.status='published'
+                AND o.off_line=0
                 AND t.code = '%s'
                 AND ssc.subsite=%s
                 AND o.platform = '%s'
@@ -278,4 +317,15 @@ def txtData2dic(filename):
             text2json=str_dict_arg(i)
             list.append(text2json)
     return list
+
+
+#生成随机字符串
+def random_str(randomlength=20):
+    strings = ''
+    chars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789'
+    length = len(chars) - 1
+    random = Random()
+    for i in range(randomlength):
+        strings+=chars[random.randint(0, length)]
+    return 'test_'+strings+'_z'
 

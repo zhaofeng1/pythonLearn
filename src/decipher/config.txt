@@ -138,25 +138,26 @@ host_json_incent=/adfetch/v1/s2s/campaign/incent/fetch
 host_json_subscribe=/adfetch/v1/s2s/campaign/subscribe/get
 host_json_iso=/adfetch/v1/s2s/campaign?platform=ios
 host_json_geo=/adfetch/v1/s2s/campaign/fetch?geo=%s
+host_json_compact=/adfetch/v1/s2s/campaign/fetch?compact=0&platform=android
 
 [s2s_json_new]
 API_PATH=/adfetch/v1/offer/offline
 
 [decipher_taskDataSend]
-API_PATH=/dc/v1/ts
+API_PATH=/dc/v1/ts?encrypt=false
 #API_PATH=/decipher/taskDataSend
 
 [decipher_click_upload]
-API_PATH=/dc/v1/cp
+API_PATH=/dc/v1/cp?encrypt=false
 
 [decipher_install_upload]
-API_PATH=/dc/v1/ip
+API_PATH=/dc/v1/ip?encrypt=false
 
 [decipher_retain_upload]
-API_PATH=/dc/v1/sp
+API_PATH=/dc/v1/sp?encrypt=false
 
 [intercept]
-API_PATH=/adserver/v1/flow/intercept/sdk
+API_PATH_V1=/adserver/v1/flow/intercept/sdk
 API_PATH_V2=/adserver/v1/flow/intercept/sdk/v2
 API_PATH_V3=/adserver/v1/flow/intercept/sdk/v3
 token=f96de517-c92e-7100-da5b-64c18b4c5116
@@ -240,6 +241,8 @@ db_port1=3306
 db_name2=adserver_report_2016_02_01
 db_port2=3306
 
+
+#线上从库地址
 [db_online]
 db_host_hasoffer = sg-adserver-hasoffer.cdvvzzu6xuar.ap-southeast-1.rds.amazonaws.com
 db_host_report = sgpadservernew-slave-01.cdvvzzu6xuar.ap-southeast-1.rds.amazonaws.com
@@ -250,6 +253,7 @@ db_port1 = 33060
 db_name2 =adserver_report_0605
 db_port2 = 33060
 
+
 [db_decipher]
 db_host = 10.200.10.146
 db_user_name = decipher
@@ -258,7 +262,7 @@ db_name1 = decipher_server
 db_port1 = 3306
 
 [db_decipher_line]
-db_host=sg-adserver-hasoffer.cdvvzzu6xuar.ap-southeast-1.rds.amazonaws.com
+db_host_da=sg-adserver-hasoffer.cdvvzzu6xuar.ap-southeast-1.rds.amazonaws.com
 db_user_name = decipher_select
 db_passwd  = decipher_select_QMBpzqwK
 db_name1 = decipher_server
@@ -402,10 +406,13 @@ ios=ios
 30108 = 5109abe1-db7a-a455-b80b-0e1829ba96c0
 30059 = 0f4bef68-5acd-a6c7-f0aa-7ac179fedeac
 30168 = 68458a92-470a-021f-e365-2d839ad7b14b
-
+30222 = e0687dfa-f6f1-eb5b-99c9-1d3ed427d04f
+30160 = 84ddd6cf-2056-0bbb-4aed-ddd203c4ee17
 
 [pid]
 30053=1662684189370000_1769833153868147
+30042=1662684189370000_1769833153868125
+30160=1662684189370000_1769833153868301
 
 [plat]
 ios=ios
